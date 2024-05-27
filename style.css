@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Teko:wght@300..700&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: #010215;
+    --secondary-color: #51ceb4;
+    --white-gray: #595f7a;
+    --blue: #0000ff;
+
+    /* Fonts */
+    --primary-font: "Chakra Petch", sans-serif;
+    --secondary-font: "Space Grotesk", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--white-gray);
+    overflow-x: hidden;
+    /* Add this line */
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+}
+
+body p {
+    font-family: var(--secondary-font);
+
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--blue);
+    font-family: var(--primary-font);
+}
+
+nav button span {
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding-top: 3px;
+}
+
+/* Blob styles */
+.blob {
+    position: absolute;
+    opacity: 0.5;
+    width: 400px;
+    aspect-ratio: 1/1;
+    animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+    filter: blur(40px);
+    z-index: -1;
+    background: linear-gradient(47deg, var(--blue) 21%, var(--secondary-color) 67%, var(--white-gray) 81%);
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+} */
+
+.profile-pic {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes animate {
+    0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+
+    50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+    }
+
+    100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .typing-demo {
+        width: 100%;
+        font-size: 1.5em !important;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1200px) {
+    .typing-demo {
+        width: 100%;
+        font-size: 2em !important;
+    }
+}
+
+section.profile {
+    background-color: var(--primary-color);
+    /* Solid background color */
+    background-image: linear-gradient(to bottom, var(--primary-color), rgba(109, 17, 163, 0.396));
+}
+
+
+.wrapper-typing {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    margin: 0 auto;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 25ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+    font-family: var(--primary-font);
+
+}
+
+section.about-me {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+section.about-me img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.hidden-top {
+    opacity: 0;
+    filter: blur(2px) !important;
+    transform: translateY(-20%) !important;
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0) !important;
+    transform: translateX(0) !important;
+}
+
+
+.glow {
+    color: #f00;
+    text-shadow: 0px 0px 10px #f00;
+}
+
+span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+
+
+span.fn {
+    color: var(--blue)
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    margin-right: 10vh;
+}
+
+.box {
+    background: url('img/profile.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center top 10%;
+    height: 350px;
+    width: 350px;
+    box-shadow: 10px 20px 10px 10px var(--blue);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.col-md-4 {
+    margin: 10px;
+}
+
+section.skills{
+    margin-top: 10rem;
+    background: linear-gradient(-45deg, var(--white-gray), var(--white-gray), var(--primary-color), var(--primary-color));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: auto;
+    padding-bottom: 10em;
+    color:#fff;
+    font-family: var(--secondary-font);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.cards {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centering the content horizontally */
+    min-height: 180px;
+    padding: 10px; /* Optional: Adding padding for better spacing */
+}
+.cards img {
+    margin: 0 auto; /* Centering the image horizontally */
+}
+.cards-body {
+    margin-top: 10px;
+}
+.row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
