@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -90,7 +91,7 @@
     <a href="#" name="skills"></a>
     <section class="skills">
         <div class="container mt-5">
-            <h1 class="p-5 text-center hidden-top"> My Skills</h1>
+            <h1 class="p-5 text-center hidden-top">My Skills</h1>
             <div class="mt-5">
                 <div class="row">
                     <div class="col-md-3 hidden-top">
@@ -114,8 +115,6 @@
                             <div class="cards-body">Javascript</div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-3  hidden-top">
                         <div class="cards">
                             <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png" alt="django"
@@ -123,6 +122,8 @@
                             <div class="cards-body">Django</div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3  hidden-top">
                         <div class="cards">
                             <img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="mysql"
@@ -135,6 +136,44 @@
                             <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png"
                                 alt="git" width="100" />
                             <div class="cards-body">Git</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  hidden-top">
+                        <div class="cards">
+                            <img src="https://www.learningkoala.com/media/posts/9/CSharp_Logo_600x600.png" alt="csharp"
+                                width="100" />
+                            <div class="cards-body">C# WinForms</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  hidden-top">
+                        <div class="cards">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png"
+                                alt="php" width="100" />
+                            <div class="cards-body">PHP</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-3  hidden-top">
+                        <div class="cards">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC97Z8BResg5dlPqczsRCFhP6zewWX0X0e7fVPG-G7PuUZwwZVsi9OPoqJYkgqT2h0FI95SsmWzVEgpt8b8HAqFiIxZ98TFtY4lE0b8UrtVJ2HrJebRwl6C9DslsQDl9KnBIrdHS6LtkY/s1600/jetpack+compose+icon_RGB.png"
+                                alt="kotlin" width="100" />
+                            <div class="cards-body">Kotlin Jetpack Compose</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  hidden-top">
+                        <div class="cards">
+                            <img src="https://rosamarfil.es/tutoriales/wp-content/uploads/2019/08/java-logo-png.png"
+                                alt="java" width="100" />
+                            <div class="cards-body">Java</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  hidden-top">
+                        <div class="cards">
+                            <img src="https://miro.medium.com/v2/resize:fit:600/1*_ovMcBbTlga_Yw_CJOTsJg.png"
+                                alt="spring" width="100" />
+                            <div class="cards-body">Spring Boot</div>
                         </div>
                     </div>
                 </div>
@@ -226,9 +265,90 @@
                     </div>
 
                 </div>
+
+                <div class="row">
+                    <div class="col-md-4 hidden-top">
+                        <div class="card d-flex flex-column h-100 btn-github project-cards">
+                            <div class="card-img-top text-center p-4">
+                                <div id="projectSlideshow1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/iot_one.jpg" class="d-block w-100 clickable-image"
+                                                alt="Project image 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <video class="d-block w-100" controls>
+                                                <source src="img/iot_one.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#projectSlideshow1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#projectSlideshow1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="flex-grow-1">
+                                    <h5 class="card-title">RFID Card Detection</h5>
+                                    <p class="card-text">Scan NFC or RFID Tag to open the servo motor gate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 hidden-top">
+                        <div class="card d-flex flex-column h-100 btn-github project-cards">
+                            <div class="card-img-top text-center p-4">
+                                <div id="projectSlideshow2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/iot_two.jpg" class="d-block w-100 clickable-image"
+                                                alt="Project image 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/iot_two(1).png" class="d-block w-100 clickable-image"
+                                                alt="Project image 2">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#projectSlideshow2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#projectSlideshow2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="flex-grow-1">
+                                    <h5 class="card-title">RFID Detection with IOT</h5>
+                                    <p class="card-text">RFID Tag and NFC scan to send notification to Telegram bot and
+                                        Website</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
+
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+        <button id="closeFullscreen">&times;</button>
+    </div>
+
 
     <a href="#" name="education"></a>
     <section class="education">
@@ -278,53 +398,63 @@
             <h6 class="hidden-top">Get in touch with me to get the ball rolling.</h6>
             <div class="row mt-5">
                 <div class="col-12">
-                    <div class="d-inline-block mr-4 mt-3 hidden-top" >
+                    <div class="d-inline-block mr-4 mt-3 hidden-top">
                         <a href="tel:+855888026678" class="icon"><i class="fas fa-phone"></i></a>
                         <div class="text">(+855) 88 802 6678</div>
-                    </div>                    
+                    </div>
                     <div class="d-inline-block mr-4 mt-3 hidden-top">
                         <a href="mailto:kimmony039@gmail.com" class="icon"><i class="fa-solid fa-envelope"></i></a>
                         <div class="text">kimmony039@gmail.com</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://github.com/monykappa" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/monykappa" target="_blank" class="icon"><i
+                                class="fa-brands fa-github"></i></a>
                         <div class="text">monykappa</div>
                     </div>
 
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://www.facebook.com/monyvlone/" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/monyvlone/" target="_blank" class="icon"><i
+                                class="fab fa-facebook-f"></i></a>
                         <div class="text">Kim Ouddommony</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://twitter.com/monykappa63" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/monykappa63" target="_blank" class="icon"><i
+                                class="fab fa-twitter"></i></a>
                         <div class="text">monykappa63</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://t.me/ouddommony_kim" target="_blank" class="icon"><i class="fab fa-telegram"></i></a>
+                        <a href="https://t.me/ouddommony_kim" target="_blank" class="icon"><i
+                                class="fab fa-telegram"></i></a>
                         <div class="text">@ouddommony_kim</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://twitter.com/yourprofile" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourprofile" target="_blank" class="icon"><i
+                                class="fab fa-linkedin"></i></a>
                         <div class="text">Kim Ouddommony</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://www.quora.com/profile/Kim-Ouddommony-1" target="_blank" class="icon"><i class="fab fa-quora"></i></a>
+                        <a href="https://www.quora.com/profile/Kim-Ouddommony-1" target="_blank" class="icon"><i
+                                class="fab fa-quora"></i></a>
                         <div class="text">Kim Ouddommony</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://twitter.com/yourprofile" target="_blank" class="icon"><i class="fab fa-reddit"></i></a>
+                        <a href="https://twitter.com/yourprofile" target="_blank" class="icon"><i
+                                class="fab fa-reddit"></i></a>
                         <div class="text">monykappa</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://www.instagram.com/just_monyy/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/just_monyy/" target="_blank" class="icon"><i
+                                class="fab fa-instagram"></i></a>
                         <div class="text">just_monyy</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://www.threads.net/@just_monyy" target="_blank" class="icon"><i class="fa-brands fa-square-threads"></i></a>
+                        <a href="https://www.threads.net/@just_monyy" target="_blank" class="icon"><i
+                                class="fa-brands fa-square-threads"></i></a>
                         <div class="text">just_monyy</div>
                     </div>
                     <div class="d-inline-block mr-4 mt-3  hidden-top">
-                        <a href="https://wasap.my/+855888026678" target="_blank" class="icon"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wasap.my/+855888026678" target="_blank" class="icon"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                         <div class="text">Whatapp</div>
                     </div>
                 </div>
