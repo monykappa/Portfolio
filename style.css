@@ -4,13 +4,17 @@
 :root {
     /* Colors */
     --primary-color: #010215;
-    --secondary-color: #51ceb4;
+    --secondary-color: #00ff00;
     --white-gray: #595f7a;
-    --blue: #0000ff;
+    --blue: #1e00ff;
+    --green: #00ff00;
 
     /* Fonts */
     --primary-font: "Chakra Petch", sans-serif;
     --secondary-font: "Space Grotesk", sans-serif;
+}
+a.navbar-brand{
+    color:var(--green) !important;
 }
 
 .clickable-image {
